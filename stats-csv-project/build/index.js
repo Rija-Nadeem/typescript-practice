@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const CsvFileReader_1 = require("./CsvFileReader");
-const matches = new CsvFileReader_1.CsvFileReader('football.csv');
+const MatchReader_1 = require("./MatchReader");
+const matches = new MatchReader_1.MatchReader('football.csv');
 matches.read();
-console.log('matches', matches.data);
+console.log('testing', matches.data.length);
