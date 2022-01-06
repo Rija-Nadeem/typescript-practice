@@ -10,7 +10,7 @@ export class Attributes<T>{
     Object.assign(this.data, update);
   }
 
-  getAll = () => {
+  getAll = (): T => {
     return this.data;
   }
 
