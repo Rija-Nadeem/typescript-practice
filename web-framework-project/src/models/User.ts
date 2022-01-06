@@ -4,7 +4,7 @@ import { ApiSync } from './ApiSync';
 import { Model } from './Model';
 import {Collection} from './Collection';
 
-interface UserProps{
+export interface UserProps{
   name?: string,
   age?: number,
   id?: number
