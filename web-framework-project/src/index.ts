@@ -1,6 +1,9 @@
-// import { User } from "./src/User";
+import { User } from './models/User';
 
-// const user = new User({id:1, name:'hamza', age: 18});
-// user.save();
+const user = new User({ id: 1, name: 'newer name', age: 0 });
 
+user.on('save', () => {
+  console.log(user);
+});
 
+user.save();
